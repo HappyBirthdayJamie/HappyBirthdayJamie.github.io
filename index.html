@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 
 <html ng-app="app">
-  <head>
+<head>
     <title></title>
-  </head>
-  <body ng-controller="Main as vm">
-      <p>This will be an angular site</p>
-  </body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+    <body ng-controller="Main as vm">
+
+        <input type="text" ng-model="vm.food" placeholder="Enter food" />
+        <p>Sriracha sauce is great with {{vm.food}}!</p>
+	
+        <script type="text/javascript" src="scripts/angular.min.js"></script>
+        <script type="text/javascript" src="controllers/main.module.js"></script>
+        <script type="text/javascript" src="controllers/main.js"></script>
+        <script type="text/javascript" src="scripts/bootstrap.min.js"></script>    
+
+    </body>
 </html>
