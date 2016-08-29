@@ -7,10 +7,9 @@
 
     function main() {
         var vm = this;
-        vm.food = 'pizza';
-        vm.funcname = function () {
-            alert("hello");
-            vm.food = 'yum';
+        
+        for (var i = 0; i > vm.printedText.length; i++) {
+        	setTimeout(function(){ vm.printedText.charAt(i) }, 500);
         }
     }
 })();

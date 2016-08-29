@@ -10,14 +10,13 @@
 </head>
     <body ng-controller="Main as vm" background="img/CIA.jpg">
 
-        <input type="text" ng-model="vm.food" placeholder="Enter a food" />
-        <p>Sriracha sauce is great with {{vm.food}}!</p>
-	
+		<div class="printed-text-container" id="printed-text-container">
+			<div class="printed-text" ng-model="printedText"></div><span class="blinking-cursor">I</span>
+		</div>
+
         <script type="text/javascript" src="scripts/angular.min.js"></script>
         <script type="text/javascript" src="controllers/main.module.js"></script>
         <script type="text/javascript" src="controllers/main.js"></script>
         <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
-
-		<span class="blinking-cursor">I</span>
     </body>
 </html>
