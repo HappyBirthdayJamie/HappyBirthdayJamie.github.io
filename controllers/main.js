@@ -14,7 +14,7 @@
         	if (i < 3) {
         		console.log("hi");
         	}
-        	setTimeout(function(){ console.log("hello") }, 1000);
+        	setTimeout(function(){ console.log("hello") }, 1000 * i);
         }
     }
 })();
