@@ -12,9 +12,10 @@
         
         for (var i = 0; i < messageText.length; i++) {
         	(function(index) {
+        		console.log("hellooooo" + i);
 	        	setTimeout(function(){ 
 	        		if (i < 3) {
-	        			console.log("hello" + i)
+	        			console.log("hello" + i);
 	        		}
 	        		vm.printedText += messageText[index]; 
 	        	}, 500 * i);
