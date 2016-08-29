@@ -13,7 +13,10 @@
         $scope.printedText = "no";
         
         for (var i = 0; i < messageText.length; i++) {
-        	setTimeout(function(){ console.log("Hi");$scope.printedText = "yes"; }, 300 * i);
+        	setTimeout(function(){ 
+        		var a = document.getElementById("printedText");
+        		a.value = a.value + messageText[i];
+        	}, 300 * i);
         }
     }
 })();
