@@ -12,9 +12,12 @@
         
         for (var i = 0; i < messageText.length; i++) {
         	(function(index) {
-        	setTimeout(function(){ 
-        		vm.printedText += messageText[index]; 
-        	}, 500 * i);
+	        	setTimeout(function(){ 
+	        		if (i < 3) {
+	        			console.log("hello" + i)
+	        		}
+	        		vm.printedText += messageText[index]; 
+	        	}, 500 * i);
         	})(i);
         }
     }
