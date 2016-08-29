@@ -12,7 +12,7 @@
         
         for (var i = 0; i < messageText.length; i++) {
         	(function(index) {
-        	setTimeout(function(index){ 
+        	setTimeout(function(){ 
         		vm.printedText += messageText[index]; 
         	}, 500 * i);
         	})(i);
