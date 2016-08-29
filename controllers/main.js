@@ -14,7 +14,7 @@
         
         for (var i = 0; i < messageText.length; i++) {
         	setTimeout(function(){ 
-        		var a = document.getElementById("printedText");
+        		var a = document.getElementById("printed-text");
         		a.value = a.value + messageText[i];
         	}, 300 * i);
         }
