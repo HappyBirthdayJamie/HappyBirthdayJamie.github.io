@@ -13,7 +13,7 @@
         var a = document.getElementById("printed-text");
         
         for (var i = 0; i < messageText.length; i++) {
-        	(function(i) {
+        	(function(i, j) {
 	        	setTimeout(function(){ 
 	        		if (messageText.charAt(i) === '_') {
 	        			a.innerHTML = "";
@@ -24,7 +24,7 @@
 	        			a.innerHTML = a.innerHTML + messageText.charAt(i);
 	        		}
 	        	}, 100 * j);
-        	})(i);
+        	})(i, j);
         }
     }
 })();
