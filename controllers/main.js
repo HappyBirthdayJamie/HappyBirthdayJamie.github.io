@@ -15,7 +15,7 @@
         type();
         
         function type() {
-            captionEl.html(caption.substr(0, captionLength++));
+            captionEl.innerHTML = caption.substr(0, captionLength++);
             if(captionLength < caption.length+1) {
                 setTimeout('type()', 50);
             } else {
