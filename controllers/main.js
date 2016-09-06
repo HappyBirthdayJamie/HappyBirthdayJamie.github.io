@@ -15,7 +15,12 @@
         
         for (var i = 0; i < messageText.length; i++) {
         	setTimeout(function(){ 
-        		a.innerHTML = a.innerHTML + messageText[i];
+        		if (a.innerHTML !== undefined) {
+        			a.innerHTML = a.innerHTML + messageText[i];
+        		}
+        		else {
+        			a.innerHTML = messageText[i];
+        		}
         	}, 300 * i);
         }
     }
