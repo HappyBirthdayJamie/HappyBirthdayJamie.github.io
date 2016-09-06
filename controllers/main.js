@@ -12,16 +12,10 @@
         
         $scope.printedText = "no";
         
-        var a = document.getElementById("printed-text");
-        
-		for (var i = 0; i < messageText.length; i++) {
-			a.value = a.value + printText(messageText[i]);
-		}
-		
-		
-        function printText(a) {
+        for (var i = 0; i < messageText.length; i++) {
         	setTimeout(function(){ 
-        		return a;
+        		var a = document.getElementById("printed-text");
+        		a.value = a.value + messageText[i];
         	}, 300 * i);
         }
     }
