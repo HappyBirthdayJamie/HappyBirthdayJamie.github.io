@@ -16,9 +16,11 @@
         for (var i = 0; i < messageText.length; i++) {
         	setTimeout(function(){ 
         		if (a.innerHTML !== undefined) {
+        			console.log(messageText.charAt(i));
         			a.innerHTML = a.innerHTML + messageText.charAt(i);
         		}
         		else {
+        			console.log(messageText.charAt(i));
         			a.innerHTML = messageText.charAt(i);
         		}
         	}, 300 * i);
