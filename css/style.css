@@ -55,8 +55,10 @@
 }
 
 .printed-text-container {
-	background: white;
-	width: 60%;
+	background: black;
+    width: 60%;
+    color: green;
+    padding: 45px;
 }
 
 .printed-text {
