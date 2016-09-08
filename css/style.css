@@ -85,7 +85,7 @@ body {
 }
 
 #giant-toe {
-	background-image: url(img/GiantToeAirplane.png);
+	background-image: url(img/GiantToeAirplane.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 25px;
@@ -96,7 +96,7 @@ body {
 }
 
 #giant-toe2 {
-	background-image: url(img/GiantToeAirplane.png);
+	background-image: url(img/GiantToeAirplane.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 250px;
