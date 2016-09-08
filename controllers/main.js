@@ -1,4 +1,4 @@
-var messageText2 = "Hello Inspector Stewart.                 " +
+var messageText = "Hello Inspector Stewart.                 " +
 		"_Your birthday present was stolen by a nefarious thief.                 " +
 		"_We have only recently apprehended the man responsible    " +
 		"_(which is why you are just now hearing about this several months after your birthday.  " +
@@ -10,7 +10,6 @@ var messageText2 = "Hello Inspector Stewart.                 " +
 		"_The man who originally stole the package said that the buyer can be found in a location that is:                 " +
 		"_Round and square, hot and cold, wet and dry.                 " +
 		"\n\nWhen you discover the identity of the buyer, type his name in here:;";
-var messageText = "Hello;";
 var instructions = document.getElementById("printed-text-container");
 var input1 = document.getElementById("input1");
 var input2 = document.getElementById("input2");
