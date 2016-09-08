@@ -3,21 +3,33 @@
 <html ng-app="app">
 <head>
     <title></title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="style.css"> 
+   <link rel="stylesheet" href="bootstrap.min.css">
+
 </head>
     <body ng-controller="Main as vm" background="img/CIA.jpg">
 
-		<div class="printed-text-container" id="printed-text-container">
-			<span class="printed-text" id="printed-text"></span><span class="blinking-cursor">I</span>
-		</div>
+		<div id="giant-toe"></div>
+		
+		<div id="giant-toe2"></div>
 
+        <textarea disabled class="printed-text-container" id="printed-text-container">
+		</textarea>
+		
+		<!-- TODO Add bootstrap rows and columns here -->
+		<textarea class="inputs" onchange="checkInput()" type="number" maxlength="1" id="input1" rows="1" cols="1"></textarea>
+		<textarea class="inputs" onchange="checkInput()" maxlength="1" id="input2" rows="1" cols="1"></textarea>
+		<textarea class="inputs" onchange="checkInput()" maxlength="1" id="input3" rows="1" cols="1"></textarea>
+		<textarea class="inputs" onchange="checkInput()" maxlength="1" id="input4" rows="1" cols="1"></textarea>
+		
+		<textarea class="inputs" onchange="checkInput()" maxlength="1" id="input5" rows="1" cols="1"></textarea>
+		<textarea class="inputs" onchange="checkInput()" maxlength="1" id="input6" rows="1" cols="1"></textarea>
+
+	<script type="text/javascript" src="controllers/main.module.js"></script>
+        <script type="text/javascript" src="controllers/main.js"></script>	
         <script type="text/javascript" src="scripts/angular.min.js"></script>
-        <script type="text/javascript" src="controllers/main.module.js"></script>
-        <script type="text/javascript" src="controllers/main.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>  
+       <script type="text/javascript" src="scripts/bootstrap.min.js"></script>    
+
     </body>
 </html>
