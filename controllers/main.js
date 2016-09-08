@@ -1,4 +1,4 @@
-var messageText = "Hello Inspector Stewart.                 " +
+var messageText2 = "Hello Inspector Stewart.                 " +
 		"_Your birthday present was stolen by a nefarious thief.                 " +
 		"_We have only recently apprehended the man responsible    " +
 		"_(which is why you are just now hearing about this several months after your birthday.  " +
@@ -10,6 +10,7 @@ var messageText = "Hello Inspector Stewart.                 " +
 		"_The man who originally stole the package said that the buyer can be found in a location that is:                 " +
 		"_Round and square, hot and cold, wet and dry.                 " +
 		"\n\nWhen you discover the identity of the buyer, type his name in here:;";
+var messageText = "k;";
 var instructions = document.getElementById("printed-text-container");
 var input1 = document.getElementById("input1");
 var input2 = document.getElementById("input2");
@@ -97,6 +98,11 @@ function moveDaPlane(topStart, top, leftStart, left) {
 	var leftValue = leftStart;
 	
 	for (var i = 0; i < (topStart - top); i += 0.5) {
+		if (i = 0) {
+			instructions.value = "";
+			instructions.innerHTML = "";
+			messageText = "";
+		}
 		(function(i) {
 	    	setTimeout(function(){ 
 	    		topValue = topStart - i;
@@ -124,6 +130,11 @@ function moveDaPlane2(topStart, top, leftStart, left) {
 	var leftValue = leftStart;
 	
 	for (var i = 0; i < (top - topStart); i += 0.5) {
+		if (i = 0) {
+			instructions.value = "";
+			instructions.innerHTML = "";
+			messageText = "";
+		}
 		(function(i) {
 			setTimeout(function(){ 
 				topValue = topStart + i;
@@ -164,6 +175,11 @@ function moveDaPlane3(topStart, top, leftStart, left) {
 	var leftValue = leftStart;
 	
 	for (var i = 0; i < (topStart - top); i += 0.5) {
+		if (i = 0) {
+			instructions.value = "";
+			instructions.innerHTML = "";
+			messageText = "";
+		}
 		(function(i) {
 	    	setTimeout(function(){ 
 	    		topValue = topStart - i;
@@ -196,13 +212,14 @@ function showFinalText() {
 
 function showSecondText() {
 	instructions.innerHTML = "";
+	messageText = "";
 	input1.value ="";
 	input2.value ="";
 	input3.value ="";
 	input4.value ="";
 	input5.value ="";
 	input6.value ="";
-	messageText = "Yeah so our airplane looks like a flying red toe with nail fungus.                                        " +
+	messageText = "_Yeah so our airplane looks like a flying red toe with nail fungus.                                        " +
 			"_So What?  Want to fight about it?  I drew it on the airplane with no mouse.          " +
 			"_John told us he no longer has the present either.          " +
 			"_He sold it to a very douchey English man" +
